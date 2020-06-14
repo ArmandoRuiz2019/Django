@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+	</head>
+	<body class="is-preload">
+
+
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="{% static 'img/dedo.png' %}" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Felicitaciones<strong> !!!!</strong>.</h1>
+							</header>
+							<p>Tu Informacion llego con exito a nuestra Base de datos  en breve revisa  tu correo donde te informaremos el proceso que deberas realizar para tu reserva</p>
+							<a href="{% url 'index' %}" class="button large scrolly">Regresar</a>
+						</div>
+					</div>
+				</div>
+			</article>
+
+
+		<!-- Scripts -->
+
+
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'assets/js/browser.min.js' %}"></script>
+			<script src="{% static 'assets/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>

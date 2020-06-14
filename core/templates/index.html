@@ -1,0 +1,664 @@
+{% load static %}
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>pyarmando.com - Armando Ruiz</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="{% static 'img/birrete.png' %}">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300i,400,400i,500,600,700,800,900" rel="stylesheet">
+
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/slicknav.min.css' %}">
+		<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/animate.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+
+		<!-- Xman CSS -->
+        <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
+        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    </head>
+    <body>
+
+		<!-- Social -->
+		<div class="social-body">
+			<ul>
+				<li class="facebook"><a href="https://www.facebook.com/armando.r.rebollar"><i class="fa fa-facebook"></i></a></li>
+				<li class="linkedin"><a href="https://www.linkedin.com/in/armandoruizrebollar/"><i class="fa fa-linkedin-square"></i></a></li>
+				<li class="github"><a href="https://github.com/ArmandoRuiz2019"><i class="fa fa-github"></i></a></li>
+				<li class="instagram"><a href="https://www.instagram.com/armandoruizrebollar/"><i class="fa fa-instagram"></i></a></li>
+				<li class="twitter"><a href="https://twitter.com/Armando73541965"><i class="fa fa-twitter"></i></a></li>
+				<li class="youtube"><a href="https://www.youtube.com/channel/UCB7iWVt_9ZciJhlD-1cACAQ"><i class="fa fa-youtube"></i></a></li>
+				<li class="blog"><a href="https://miblogpythonico.herokuapp.com/"><i class="fa fa-book"></i></a></li>
+				<li class="test"><a href="https://examenespython.herokuapp.com/"><i class="fa fa-question-circle"></i></a></li>
+
+
+			</ul>
+		</div>
+		<!--/ End Social -->
+
+		<!-- Header Area -->
+		<header id="header" class="header">
+			<div class="header-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-2 col-xs-12">
+							<div class="logo">
+								<a href="{% url 'index' %}"><img src="{% static 'img/birrete.png' %}" width="100%"  alt="milogo.png"> </a>
+							</div>
+						</div>
+						<div class="col-md-9 col-sm-10 col-xs-12">
+							<div class="mobile-menu"></div>
+							<nav class="navbar navbar-default">
+								<div class="collapse navbar-collapse">
+									<ul id="nav" class="nav navbar-nav">
+										<li class="current"><a href="#slider">Bienvenida</a></li>
+										<li><a href="#about">Acerca de Mi</a></li>
+										<li><a href="#service">Servicios</a></li>
+										<li><a href="#skill">Habilidades</a></li>
+										<li><a href="#story">Experiencia</a></li>
+										<li><a href="#latest-works">Portafolio</a></li>
+										<li><a href="#blog">Cursos</a></li>
+										<li><a href="#contact">Contactame</a></li>
+									</ul>
+								</div>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+
+		<!-- Slider Area -->
+		<section id="slider" class="slider" style="background-image:url('{{personal.fotofondo.url}}');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-7 col-sm-12 col-xs-12">
+						<div class="text">
+							<h1>Armando Ruiz</h1>
+							<p><i class="fa fa-quote-left"></i><i> <font face="Comic Sans MS,arial" size="3">{{personal.textobienvenida}}</font></i></p>
+
+							<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="image">
+								<img src="{% static 'img/pcep.png'  %}" alt="#" class="img-responsive center-block" width="40%">
+							</div>
+
+								<div class="trans text-center"> 
+									<a href="https://www.youracclaim.com/badges/01fd6628-1465-4bcd-a1ee-c502ed3d6dd9/linked_in" class="btn btn-danger" role="button">Verificar Credencial</a>
+								</div>
+
+						</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+
+		<!-- Start about -->
+		<section id="about" class="about">
+			<div class="container">
+				<div class="row">
+					<div class="about-content">
+						<div class="col-md-2 col-sm-2 col-xs-12">
+							<div class="section-title">
+								<h2>Acerca <span>de Mi</span></h2>
+							</div>
+						</div>
+						<div class="col-md-6  col-sm-6 col-xs-12">
+							<div class="single-about">
+								<p align="justify"><i class="fa fa-quote-left"></i><i> <font face="Comic Sans MS,arial" size="3"> {{personal.textoacerca}}</font></i> </p>
+								<div class="cv">
+									<a href={{personal.pdf.url}}>Descargar CV</a>
+								</div>
+								<div class="social">
+									<ul>
+										<li><a href="https://www.facebook.com/armando.r.rebollar"><i class="fa fa-facebook-f"></i></a></li>
+										<li><a href="https://www.linkedin.com/in/armandoruizrebollar/"><i class="fa fa-linkedin-square"></i></a></li>
+										<li><a href="https://github.com/ArmandoRuiz2019"><i class="fa fa-github"></i></a></li>
+										<li><a href="https://www.instagram.com/armandoruizrebollar/"><i class="fa fa-instagram"></i></a></li>
+										<li><a href="https://twitter.com/Armando73541965"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="https://www.youtube.com/channel/UCB7iWVt_9ZciJhlD-1cACAQ"><i class="fa fa-youtube"></i></a></li>
+										<li><a href="https://miblogpythonico.herokuapp.com/"><i class="fa fa-book"></i></a></li>
+										<li><a href="https://examenespython.herokuapp.com/"><i class="fa fa-question-circle"></i></a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12">
+							<div class="image">
+								<img src={{personal.fotoperfil.url}} alt="#" >
+								<a href={{personal.videopresentacion}} class="video video-popup mfp-iframe"><i class="fa fa-video-camera"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End about -->
+
+		<!-- Start service -->
+		<section id="service" class="service section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="section-title">
+							<h2>Mis <span>Servicios</span></h2>
+						</div>
+					</div>
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+								<!-- single-service -->
+								<div class="single-service">
+									<i class="fa fa-laptop"></i>
+									<h5>Desarrollo Web</h5>
+									<p align="justify">Si quieres pulsar tu negocio por Internet y que se haga mundialmente conocido como una plataforma de ventas y mostrar tus productos . Somos especialistas en montar tu empresa en la Nube. Desarrollamos en <a href="https://www.djangoproject.com/" class="btn btn-danger" role="button">DJANGO</a>  <a href="https://flask.palletsprojects.com/en/1.1.x/" class="btn btn-warning" role="button">FLASK</a> Frameworks de PYTHON</p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.5s">
+								<!-- single-service -->
+								<div class="single-service">
+									<i class="fa fa-mobile"></i>
+									<h5>Desarrollo Móvil</h5>
+									<p align="justify">Si estás pensando en implementar una Aplicación para tu empresa o emprendimiento que funcionen en celulares Android podemos ayudarte a cumplir tu meta en corto tiempo. Utilizamos La Librería de PYTHON <a href="https://kivy.org/#home" class="btn btn-primary" role="button">KIVY</a> para dicho propósito </p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+								<!-- single-service -->
+								<div class="single-service">
+									<i class="fa fa-database"></i>
+									<h5>Ciencia de Datos</h5>
+									<p align="justify">Si tu Negocio o empresa genera una colección considerable de datos y tienes dificultades para su procesamiento y análisis. te ayudamos al cálculo estadístico y la visualización gráfica de los datos para extraer conclusiones y tomar decisiones utilizando librerías de PYTHON como<a href="https://matplotlib.org/" class="btn btn-primary" role="button">Matplotlib</a>  <a href="https://seaborn.pydata.org/" class="btn btn-success" role="button">Seaborn</a></p>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.8s">
+								<!-- single-service -->
+								<div class="single-service">
+									<i class="fa fa-cloud"></i>
+									<h5>Servicios en la Nube</h5>
+									<p align="justify">Si deseas montar todo los sistemas de tu empresa en la Nube y no sabes ¿Cual te conviene? , ¿Como entenderlo?, ¿Cuanto seria el costo? te ayudamos a la implementación y administración en los siguientes Cloud: <a href="https://aws.amazon.com/es/" class="btn btn-info" role="button">Aws</a>  <a href="https://azure.microsoft.com/es-es/" class="btn btn-success" role="button">Azure</a> <a href="https://www.heroku.com/" class="btn btn-danger" role="button">Heroku</a> <a href="https://www.digitalocean.com/" class="btn btn-warning" role="button">Digital Ocean</a> por medios de VPS</p>
+								</div>
+							</div>
+
+
+							<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.7s">
+								<!-- single-service -->
+								<div class="single-service">
+									<i class="fa fa-gears"></i>
+									<h5>Machine Learning</h5>
+									<p align="justify">Si Desea implementar proyectos orientados a la Inteligencia Artificial creando sistemas que aprenden automáticamente. Te ayudamos a desarrollar proyectos de este tipo utilizando las librerías de PYTHON como <a href="https://numpy.org/" class="btn btn-danger" role="button">Numpy</a> <a href="https://www.scipy.org/" class="btn btn-warning" role="button">SciPy</a>  <a href="https://pandas.pydata.org/" class="btn btn-success" role="button">Pandas</a> <a href="https://plotly.com/" class="btn btn-info" role="button">Plotly</a></p>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.9s">
+								<!-- single-service -->
+								<div class="single-service">
+									<i class="fa fa-graduation-cap"></i>
+									<h5>Capacitacion</h5>
+									<p align="justify">Frecuentemente implementaremos cursos en formato virtual que le ayudaran potenciar sus conocimientos ,cada curso se dictara por una instructor especialista y certificado en la materia</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+		</section>
+		<!--/ End service -->
+
+		<!-- Start skill -->
+		<section id="skill" class="skill section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-12 col-xs-12">
+						<div class="section-title">
+							<div class="image">
+								<img src="{% static 'img/pythont.png'  %}" alt="#" width="50%">
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-10 col-sm-12 col-xs-12">
+						<div class="skill-head">
+							<div class="row">
+								<div class="col-md-6 col-sm-12 col-xs-12">
+									<div class="skill-content">
+										<h3>Porque PYTHON?</h3>
+										<p align="justify"><i class="fa fa-quote-left"></i><i> <font face="Comic Sans MS,arial" size="3">Python es realmente un lenguaje de programación fantástico.
+										Es de código abierto, fácil de aprender (y fácil de leer), versátil y utilizado tanto por principiantes como por expertos. De hecho, cientos de empresas exitosas utilizan la programación de Python, incluidas Google, Spotify Instagram y Netflix, por nombrar algunas.
+										¡Python se está convirtiendo rápidamente en uno de los mejores lenguajes de programación en el mundo! Con una certificación de Python, puede obtener fácilmente cualquiera de los siguientes empleos: Desarrollador Backend Python Cientifíco de datos, Desarrollador Web,
+										Desarrollador Móvil, Mentor (¿Quién sabe? ¡Tal vez serás un experto en lenguaje de programación Python al final de esto!) , Desarrollador de Servicios Experto en Algoritmos para la Inteligencia Artificial
+										en fin . <br>Según una encuesta publicada por <a style="color:#66ad5f;" href="https://insights.stackoverflow.com/survey/2019">StackOverflow</a> , Python fue una de las tecnologías más demandadas de 2018 y 2019. ¡Asumo que lo mismo es cierto para 2020 también!
+										Esto significa que los desarrolladores de Python son altamente remunerados porque hay una gran escasez.
+                                        <br><br>
+											Te recomiendo que hagas el cambio no te arrepentirás ...</font></i>
+
+
+											<br>Este es el porcentaje de mis habilidades en Python. </p>
+										<p><b>"Vive como si fueras a morir mañana. Aprende como si fueras a vivir para siempre". Mahatma Gandhi.</b></p>
+									</div>
+								</div>
+								<div class="col-md-6 col-sm-12 col-xs-12">
+									<div class="skill-main">
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>PYTHON 2,3</h4>
+											</div>
+											<div class="progress two">
+												<div class="progress-bar" data-percent="95">
+													<span>95%</span>
+												</div>
+											</div>
+										</div>
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>Desarrollo Web - DJANGO</h4>
+											</div>
+											<div class="progress two">
+												<div class="progress-bar" data-percent="80">
+													<span>80%</span>
+												</div>
+											</div>
+										</div>
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>Desarrollo Web - FLASK</h4>
+											</div>
+											<div class="progress two">
+												<div class="progress-bar" data-percent="70">
+													<span>70%</span>
+												</div>
+											</div>
+										</div>
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>Desarrollo Móvil - Kivy </h4>
+											</div>
+											<div class="progress two">
+												<div class="progress-bar" data-percent="90">
+													<span>90%</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>Ciencia de Datos</h4>
+											</div>
+											<div class="progress two">
+												<div class="progress-bar" data-percent="70">
+													<span>70%</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>Machine Learning</h4>
+											</div>
+											<div class="progress two">
+												<div class="progress-bar" data-percent="60">
+													<span>60%</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="single-skill">
+											<div class="skill-title">
+												<h4>Servicios en la Nube</h4>
+											</div>
+											<div class="progress two">
+												<div class="progress-bar" data-percent="90">
+													<span>90%</span>
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End skill -->
+
+		<!-- Start Story -->
+		<section id="story" class="story section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="section-title">
+							<h2>Mi <span>Experiencia</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+						<div class="story-content">
+							<!-- single-story -->
+
+						 {% for item in experiencia %}
+							<div class="single-story">
+								<span class="year wow fadeInLeft" data-wow-duration="0.8s" data-wow-delay="0.4s">{{item.año}}</span>
+								<div class="inner-content wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.4s">
+                                    <h3>{{item.empresa}}</h3>
+									<p class="p2"><b>Cargo : {{tem.cargo}}</b></p>
+									<p align="justify"><font face="Comic Sans MS,arial" size="3">{{item.funciones}}</font></p>
+								</div>
+							</div>
+					     {%  endfor %}
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End story -->
+
+		<!-- Latest Works -->
+		<section id="latest-works" class="latest-works section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="section-title">
+							<h2>MI <span>PORTAFOLIO</span></h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<!-- Project Nav -->
+						<div class="works-menu wow fadeInUp" data-wow-duration="0.8s" data-wow-delay="0.6s">
+							<ul>
+								<li class="active" data-filter="*"><i class="fa fa-tasks"></i><font face="Comic Sans MS,arial" size="3">Todos</font></li>
+								<li data-filter=".web"><i class="fa fa-laptop"></i><font face="Comic Sans MS,arial" size="3">Desarrollo Web</font></li>
+								<li data-filter=".movil"><i class="fa fa-mobile"></i><font face="Comic Sans MS,arial" size="3">Desarrollo Móvil</font></li>
+								<li data-filter=".escritorio"><i class="fa fa-camera"></i><font face="Comic Sans MS,arial" size="3">Desarrollo Escritorio</font></li>
+							</ul>
+						</div>
+						<!--/ End Project Nav -->
+					</div>
+				</div>
+				<div class="row">
+					<div class="isotop-active">
+
+				{% for por in portafolio %}
+
+						<div class="col-md-4 col-sm-4 col-xs-12 {{por.categoria}}" >
+							<!-- single-work -->
+							<div class="single-work">
+								<img src={{por.foto.url}} alt="#">
+								<div class="works-hover">
+									<h4><a href={{por.link}}>{{ por.nombre }}</a></h4>
+									<div class="link"></div>
+								</div>
+							</div>
+						</div>
+				 {% endfor %}
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Works -->
+
+		<!-- Testimonials -->
+		<section id="testimonials" class="testimonials section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<div class="testi-content">
+							<h2>Mira lo que algunas personas tienen para decir.</h2>
+							<div class="owl-carousel testimonial-slider">
+								<!--Start single-testimonial -->
+						  {% for test in comentarios %}
+								<div class="single-testimonial">
+									<img src="{{test.foto.url}}" alt="#">
+									<p><i class="fa fa-quote-left"></i><i>{{test.comentario}}</i></p>
+									<div class="star">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half"></i>
+									</div>
+									<span class="name">{{test.nombre}}</span>
+								</div>
+						  {% endfor %}
+								<!--End single-testimonial -->
+								<!--Start single-testimonial -->
+
+								<!--End single-testimonial -->
+								<!-- Single Testimonial -->
+
+								<!--/ End Single Testimonial -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End testimonial -->
+
+		<!-- Blog -->
+		<section id="blog" class="blog section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 col-sm-4 col-xs-12">
+						<div class="section-title">
+							<h2>¿Que estas esperando?<span><br>¡Regístrate para aprender Python hoy!</span></h2>
+							<h2>Modalidad Virtual</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+
+		   {% for item in cursos %}
+					<div class="col-md-4 col-sm-12 col-xs-12 wow fadeInRight" data-wow-duration="0.8s" data-wow-delay="0.4s">
+						<!-- single-news -->
+						<div class="single-news">
+							<div class="news-head">
+								<div class="news-date">
+									<span>{{item.dia}}</span>
+									<span>{{item.mes}}</span>
+									<span>{{item.año}}</span>
+								</div>
+								<img src="{{item.foto.url}}" alt="#">
+								<div class="news-view">
+									<span><i class="fa fa-comments"></i>{{item.numcomentarios}} comentarios</span>
+									<span><i class="fa fa-eye"></i>{{item.numvistas}} vistas</span>
+								</div>
+							</div>
+							<div class="news-body">
+								<h2><a href="#"><font face="Comic Sans MS,arial" size="3"><b>{{item.nombre}}</b></font></a></h2>
+								<p align="justify"><font face="Comic Sans MS,arial" size="3">{{item.descripcion}}</font></p>
+								<div class="text-center">
+  									<a class="btn btn-primary" href="{% url 'temario' item.id %}" role="button">Ver Temario</a>
+									<a class="btn btn-primary" href="#contact" role="button">REGISTRARME</a>
+								</div>
+							</div>
+						</div>
+					</div>
+			 {% endfor %}
+				</div>
+			</div>
+		</section>
+		<!--/ End blog -->
+
+		<!-- Newslatter -->
+		<section id="newslatter" class="newslatter section">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="news-text wow fadeIn" data-wow-duration="0.8s" data-wow-delay="0.5s">
+							<h4>No te pierdas</h4>
+							<h2>Enterate de las ultimas Novedades</h2>
+							<p>Obtenga todas las últimas noticias y nuestro contenido exclusivo directamente en su correo electrónico</p>
+						</div>
+						<div class="form wow shake" data-wow-duration="0.8s" data-wow-delay="0.5s">
+							<input type="email" placeholder="Ingresa tu Correo">
+							<button type="text" value="send">Registrarme</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Newslatter -->
+
+		<!-- Contact -->
+		<section id="contact" class="contact section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-12 col-xs-12">
+						<div class="contact-info">
+
+							<a name="inscripcion"></a><h4>Contáctanos para realizar tu reserva</h4>
+
+							<p align="justify"><i class="fa fa-quote-left"></i><i> <font face="Comic Sans MS,arial" size="3">Déjanos la información necesaria en el siguiente formulario, y nos contactaremos contigo para ayudarte a reservar tu inscripción. Te informamos que las clases son 100% virtuales con el mentor en vivo y en directo!! Serás parte de nuestra comunidad YACHACHIY.NET el cual tendrás acceso a toda nuestra plataforma educativa</font></i></p>
+							<span><i class="fa fa-phone-square"></i>Fijo: 51 390-7773  Whatsapp :51 934-995611</span>
+
+							<span><i class="fa fa-map-marker"></i>Santiago Surco Lima - Perú</span>
+							<span><i class="fa fa-envelope"></i><a href="#">informes@yachachiy.net</a></span>
+							<span><i class="fa fa-globe"></i><a href="#">www.yachachiy.net</a></span>
+						</div>
+					</div>
+
+					<div class="col-md-8 col-sm-12 col-xs-12">
+						<div class="form-head">
+							<div class="pure-g-r content-ribbon" id="contacto">
+								<div class="pure-u-1">
+									{% if is_valid %}
+									<p>Has Enviado Correctamente el Formulario</p>
+									{% endif %}
+									<form action="#contacto"  method="post">
+										{% csrf_token %}
+
+											{% for field in form %}
+											<div class="form-group" >
+												<div class="col-md-0 pull-left">
+												{{ field.label_tag }}
+												</div>
+												{{ field }}
+												{% if field.errors %}
+												<ul class="errorlist">
+													{% for error in field.errors %}
+													<li>{{ error }}</li>
+													{% endfor %}
+												</ul>
+												{% endif %}
+											</div>
+											{% endfor %}
+											<div class="payment-adress comment-stn">
+                                                <button  type="submit" class="btn btn-danger">Enviar</button>
+                                            </div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Contact -->
+
+		<!-- Clients -->
+		<div id="clients" class="clients section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="owl-carousel clients-slider">
+							<div class="single-clients">
+								<img src="{% static 'img/python2.jpg' %}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{% static 'img/bd.jpg' %}" alt="#">
+							</div>
+
+							<div class="single-clients">
+								<img src="{% static 'img/postgress.jpg' %}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{% static 'img/sql2.jpg' %}" alt="#">
+							</div>
+							<div class="single-clients">
+								<img src="{% static 'img/mongo.jpg' %}" alt="#">
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--/ End Clients -->
+
+		<!-- Footer -->
+		<footer id="footer" class="footer section">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="logo">
+								<img src="{% static 'img/birrete.png' %}" alt="#">
+							</div>
+							<!-- Social -->
+							<ul class="social">
+								<li><a href="https://www.facebook.com/armando.r.rebollar"><span class="fa fa-facebook"></span></a></li>
+								<li><a href="https://www.linkedin.com/in/armandoruizrebollar/"><span class="fa fa-linkedin-square"></span></a></li>
+								<li><a href="https://github.com/ArmandoRuiz2019"><span class="fa fa-github"></span></a></li>
+								<li><a href="https://www.instagram.com/armandoruizrebollar/"><span class="fa fa-instagram"></span></a></li>
+								<li><a href="https://twitter.com/Armando73541965"><span class="fa fa-twitter"></span></a></li>
+								<li><a href="https://www.youtube.com/channel/UCB7iWVt_9ZciJhlD-1cACAQ"><i class="fa fa-youtube"></i></a></li>
+								<li><a href="https://miblogpythonico.herokuapp.com/"><i class="fa fa-book"></i></a></li>
+													<li><a href="https://examenespython.herokuapp.com/"><i class="fa fa-question-circle"></i></a></li>
+							</ul>
+							<!-- End Social -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<p>© 2020 Copyright Armando Ruiz</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--/ End Footer -->
+
+        <script src="{% static 'js/jquery.min.js' %}">  </script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/jquery.nav.js' %}"></script>
+        <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+        <script src="{% static 'js/easing.min.js' %}"></script>
+		<script src="{% static 'js/jquery-appear.js' %}"></script>
+        <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+        <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+		<script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+		<script src="{% static 'js/wow.min.js' %}"></script>
+		<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyC0RqLa90WDfoJedoE3Z_Gy7a7o8PCL2jw"></script>
+        <script type="text/javascript" src="{% static 'js/gmaps.min.js' %}"></script>
+        <script src="{% static 'js/main.js' %}"></script>
+    </body>
+</html>
